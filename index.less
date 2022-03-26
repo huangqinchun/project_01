@@ -1,0 +1,109 @@
+// out:./
+*{
+    margin: 0;
+    padding: 0;
+    // box-sizing: border-box;
+}
+body{
+    background-color: rgba(95,158,160, 0.5);
+}
+
+#mine{
+    margin: 50px auto;
+
+    // 等级模式
+    .level{
+        text-align: center;
+        margin-bottom: 10px;
+
+        // 按钮
+        button{
+            padding: 5px 15px;
+            background-color: #02a4ad;
+            border: none;
+            color: #fff;
+            border-radius: 3px;
+            outline: none;
+            cursor: pointer;
+
+            // 正在进行的按钮样式
+            &.active{
+                background-color:rgba(165, 42, 42, 0.822);
+            }
+        }
+    }
+
+    // 棋盘区域
+    .gameBox{
+
+        // 样式
+        table{
+            border-radius: 1px;
+            background-color: #929196;
+            margin: 0 auto;
+
+            td{
+                width: 20px;
+                height: 20px;
+                background-color: #ccc;
+                border: 2px solid;
+                border-color: #fff #a1a1a1 #a1a1a1 #fff;
+                text-align: center;
+                line-height: 20px;
+                font-weight: bold;
+
+                &.bomb{//雷
+                    background: #d9d9d9 url(./images/战雷.jpg) no-repeat center;
+                    background-size: cover;
+                }
+                &.flag{
+                    background: #ccc url(./images/博旗.jfif) no-repeat center;
+                    background-size: cover;
+                }
+
+                // 数字样式
+                &.all{
+                    border-color: #d9d9d9;
+                    background-color: #d9d9d9;     
+                }
+
+                &.zero{
+                    border-color: #d9d9d9;
+                    background-color: #d9d9d9;   
+                }
+                &.one{
+                    border-color: #d9d9d9;
+                    background-color: #d9d9d9; 
+                    color: blue;
+                }
+                &.two{
+                    color:#02a4ad;
+                }
+                &.three{
+                    color:brown;
+                }
+                &.four{
+                    color:darkslateblue;
+                }
+                &.five{
+                    color:green;
+                }
+                &.six{
+                    color:chocolate;
+                }
+                &.seven{
+                    color:cornflowerblue;
+                }
+                &.eight{
+                    color:deepskyblue;
+                }
+            }
+        }
+    }
+
+    // 剩余雷数
+    .info{
+        margin-top: 10px;
+        text-align: center;
+    }
+}

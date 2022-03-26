@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgba(95, 158, 160, 0.5);
+}
+#mine {
+  margin: 50px auto;
+}
+#mine .level {
+  text-align: center;
+  margin-bottom: 10px;
+}
+#mine .level button {
+  padding: 5px 15px;
+  background-color: #02a4ad;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}
+#mine .level button.active {
+  background-color: rgba(165, 42, 42, 0.822);
+}
+#mine .gameBox table {
+  border-radius: 1px;
+  background-color: #929196;
+  margin: 0 auto;
+}
+#mine .gameBox table td {
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  border: 2px solid;
+  border-color: #fff #a1a1a1 #a1a1a1 #fff;
+  text-align: center;
+  line-height: 20px;
+  font-weight: bold;
+}
+#mine .gameBox table td.bomb {
+  background: #d9d9d9 url(images/战雷.jpg) no-repeat center;
+  background-size: cover;
+}
+#mine .gameBox table td.flag {
+  background: #ccc url(images/博旗.jfif) no-repeat center;
+  background-size: cover;
+}
+#mine .gameBox table td.all {
+  border-color: #d9d9d9;
+  background-color: #d9d9d9;
+}
+#mine .gameBox table td.zero {
+  border-color: #d9d9d9;
+  background-color: #d9d9d9;
+}
+#mine .gameBox table td.one {
+  border-color: #d9d9d9;
+  background-color: #d9d9d9;
+  color: blue;
+}
+#mine .gameBox table td.two {
+  color: #02a4ad;
+}
+#mine .gameBox table td.three {
+  color: brown;
+}
+#mine .gameBox table td.four {
+  color: darkslateblue;
+}
+#mine .gameBox table td.five {
+  color: green;
+}
+#mine .gameBox table td.six {
+  color: chocolate;
+}
+#mine .gameBox table td.seven {
+  color: cornflowerblue;
+}
+#mine .gameBox table td.eight {
+  color: deepskyblue;
+}
+#mine .info {
+  margin-top: 10px;
+  text-align: center;
+}
